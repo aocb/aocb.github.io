@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .leftside {
+            flex: 30%;
+            background-color: rgb(150, 150, 150);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .rightside {
+            flex: 70%;
+            background-color: blanchedalmond;
+            padding: 20px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Page</h1>
-    <h2><a href="/">Home</a></h2>
+    <div class="header"><h1>Contact Page</h1></div>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/education">Education</a>
+        <a href="/resume">Resume</a>
+        <a href="/contact" class="right">Contact</a>
+    </div>
+    <div class="row">
+        <div class="leftside">
+            <h1>LinkedIn</h1>
+        </div>
+    </div>
 </body>
 </html>
