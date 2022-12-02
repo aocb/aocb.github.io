@@ -3,40 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidan's Portfolio</title>
+    <title>Aidan Bradley's Engineering Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .header {
-            padding: 50px;
-            text-align: center;
-            background-color: rgb(109, 109, 109);
-            color: white;
-            font-size: 25px;
+        .leftside {
+            flex: 30%;
+            background-color: rgb(150, 150, 150);
+            padding: 20px;
+            text-align: left;
         }
 
-        .navbar {
-            overflow: hidden;
-            background-color: rgb(61, 61, 61);
-        }
-
-        .navbar a{
-            padding: 10px 15px;
-            display: block;
-            text-align: center;
-            float: left;
-            color: white;
+        .rightside {
+            flex: 70%;
+            background-color: blanchedalmond;
+            padding: 20px;
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Aidan Mech Eng</h1>
+        <h1>Aidan Bradley</h1>
+        <h3>Mechanical Engineering Student</h3>
     </div>
     <div class="navbar">
-        <a href="/contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/education">Education</a>
+        <a href="/resume">Resume</a>
+        <a href="/contact" class="right">Contact</a>
     </div>
-
-    <p>Hello World</p>
-    <a href="/contact">Contact</a>
+        <div class="row">
+            <div class="leftside">
+                <h5>Past Projects:</h5>
+            </div>
+            <div class="rightside">
+                <h5>APSC 100</h5>
+                <h5>APSC 200</h5>
+            </div>
+    </div>
 </body>
 </html>
