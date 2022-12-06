@@ -43,3 +43,26 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width:100%;
+    }
+  } */
+
+  .footer {
+    padding: 80px;
+    text-align: center;
+    background:#ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
