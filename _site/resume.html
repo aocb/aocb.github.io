@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .resumeOffScreen {
+            display: none;
+        }
+
+        .resumeOnScreen {
+            display: inline;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -16,6 +26,22 @@
         <a href="/resume">Resume</a>
         <a href="/contact" class="right">Contact</a>
     </div>
-        <iframe src="/assets/ResumeSite.pdf#toolbar=0"  width="100%" height="750px"></iframe>
+    <br>
+    <button id="displayResumeButton" onclick="displayResume()">
+        Display
+    </button>
+
+    <iframe style="display:none" id='resumesite' src="/assets/ResumeSite.pdf"  width="100%" height="750px"></iframe>
+
+    <script>
+        function displayResume() {
+            document.getElementById('resumesite').style.display = "inline";
+            document.getElementById('displayResumeButton').style.display = "none";
+        }
+    </script>
+
+    <!-- <div class="resumeDisplay">
+        <iframe id='resumesite' src="/assets/ResumeSite.pdf"  width="100%" height="750px"></iframe>
+    </div> -->
 </body>
 </html>
