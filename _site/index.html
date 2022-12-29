@@ -6,60 +6,70 @@
     <title>Aidan Bradley's Engineering Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .leftside {
+        .leftSide {
             flex: 30%;
             background-color: rgb(150, 150, 150);
             padding: 20px;
             text-align: left;
         }
 
-        .rightside {
+        .rightSide {
             flex: 70%;
             background-color: blanchedalmond;
             padding: 20px;
             text-align: right;
         }
 
-        .footerLeftColumn {
-            flex: 40%;
-            padding: 5px;
-            text-align: left;
+        .footerText {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
-        .footerRightColumn {
-            flex: 60%;
-            padding: 5px;
-            text-align: right;
+        .footerText a.RightColumn {
+            float: right;
+        }
+
+        .footerText a.LeftColumn {
+            float: left;
+        }
+
+        .header {
+            padding: 1px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Aidan Bradley</h1>
-        <h3>Mechanical Engineering Student</h3>
+        <h3>Mechanical Engineering Student; Open to Work!</h3>
     </div>
     <div class="navbar">
         <a href="/">Home</a>
         <a href="/education">Education</a>
         <a href="/resume">Resume</a>
+        <a href="/portfolio">Portfolio</a>
         <a href="/contact" class="right">Contact</a>
+        <a href="/portfolio">Portfolio</a>
     </div>
         <div class="row">
-            <div class="leftside">
+            <div class="leftSide">
                 <h5>Past Projects:</h5>
             </div>
-            <div class="rightside">
+            <div class="rightSide">
                 <h5>APSC 100</h5>
                 <h5>APSC 200</h5>
             </div>
     </div>
     <div class="footer">
-        <div class="footerLeftColumn">
-            <a href="https://www.linkedin.com/in/aidanocbradley/">https://www.linkedin.com/in/aidanocbradley/</a>
-        </div>
-        <div class="footerRightColumn">
-            <a href="mailto:a@aocb.ca">a@aocb.ca</a>
+        <div class="footerText">
+            <a href="https://www.linkedin.com/in/aidanocbradley/" class="LeftColumn">LinkedIn Profile</a>
+            <br>
+            <a href="mailto:a@aocb.ca" class="LeftColumn">E-Mail</a>
+            <br>
+            <a href="https://github.com/aocb" class="LeftColumn">GitHub Profile</a>
+            <br>
+            <a href="https://github.com/aocb/aocb.github.io" class="LeftColumn">Website Repository</a>
         </div>
     </div>
-</body>
-</html>
