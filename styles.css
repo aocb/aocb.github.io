@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     background-color: rgb(109, 109, 109);
     color: white;
@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .row {   
       flex-direction: column;
     }
@@ -55,10 +55,10 @@ body {
       float: none;
       width:100%;
     }
-  } */
+  }
 
   .footer {
-    padding: 80px;
+    padding: 30px;
     text-align: center;
     background:#ddd;
     position: fixed;
