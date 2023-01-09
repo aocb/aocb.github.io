@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     background-color: rgb(109, 109, 109);
     color: white;
@@ -66,3 +66,8 @@ body {
     bottom: 0;
     width: 100%;
   }
+
+  ul.a {
+    list-style-type: circle;
+    list-style-position: inside;
+}
