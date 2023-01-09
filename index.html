@@ -15,28 +15,32 @@
 
         .rightSide {
             flex: 70%;
-            background-color: blanchedalmond;
+            background-color: rgb(184, 184, 184);
             padding: 20px;
             text-align: right;
         }
 
-        .footerText {
-            display: block;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        .footerText a.RightColumn {
-            float: right;
-        }
-
-        .footerText a.LeftColumn {
-            float: left;
-        }
-
         .header {
-            padding: 1px;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .element {
+            margin: auto;
+        }
+
+        .pic {
+            float: left;
+            padding: 20px;
+            flex: auto;
+        }
+        
+        .about {
+            flex: auto;
+            text-align: left;
         }
     </style>
 </head>
@@ -50,25 +54,24 @@
         <a href="/education">Education</a>
         <a href="/resume">Resume</a>
         <a href="/portfolio">Portfolio</a>
-        <a href="/contact" class="right">Contact</a>
+        <a href="/contact" class="right">Contact</a> 
     </div>
-        <div class="row">
-            <div class="leftSide">
-                <h5>Past Projects:</h5>
-            </div>
-            <div class="rightSide">
-                <h5>APSC 100</h5>
-                <h5>APSC 200</h5>
-            </div>
-    </div>
-    <div class="footer">
-        <div class="footerText">
-            <a href="https://www.linkedin.com/in/aidanocbradley/" class="LeftColumn">LinkedIn Profile</a>
-            <br>
-            <a href="mailto:a@aocb.ca" class="LeftColumn">E-Mail</a>
-            <br>
-            <a href="https://github.com/aocb" class="LeftColumn">GitHub Profile</a>
-            <br>
-            <a href="https://github.com/aocb/aocb.github.io" class="LeftColumn">Website Repository</a>
-        </div>
-    </div>
+    <img class="pic" src="/assets/Aidan Bradley.jpg" height="300px">
+    <div class="about">
+        <h2>Hello!</h2>
+        <p>My name is Aidan Bradley and I am a mechanical engineering student in my third year at Queen's University.</p>
+        <p>I'm passionate about automotives and hope to help design cars for use by consumers and in motorsports.</p>
+        <p>Some of my other interests include:</p>
+        <ul class="a">
+            <li>Camping and hiking</li>
+            <li>3D printing</li>
+            <li>Classical history and philosophy</li>
+            <li>Simulation racing</li>
+            <li>Bread baking</li>
+        </ul>
+        <p>...and recently web development! This website serves as my professional portfolio alongside my intro to HTML, CSS, and JavaScript. Please feel free to take a look at the <a href="https://github.com/aocb/aocb.github.io" target="_blank">project page on GitHub</a></p>
+        <p style="padding-left: 20px">If you are an employer looking for a motivated intern with an attention for detail, ready to learn and thrive in a fast-paced environment, you've come to the right place! Please find my work experience above and contact details <a href="/contact">here</a></p>
+    </div>        
+</body>
+</html>
+  

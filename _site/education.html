@@ -6,19 +6,22 @@
     <title>Education</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .leftside {
-            flex: 15%;
-            background-color: rgb(150, 150, 150);
-            padding: 20px;
-            text-align: left;
+        #DIV {
+            height: 300px;
         }
-        
-        .rightside {
-            flex: 85%;
-            background-color: blanchedalmond;
-            padding: 20px;
-            text-align: left;
+
+        #Table {
+            width: 100%;
+            table-layout: auto;
+            float:left;
+            border-collapse: collapse;
         }
+
+        td {
+            padding: 7px;
+        }
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
     </style>
 </head>
 <body>
@@ -29,21 +32,44 @@
         <a href="/">Home</a>
         <a href="/education">Education</a>
         <a href="/resume">Resume</a>
-        <a href="/contact" class="right">Contact</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact" class="right">Contact</a> 
     </div>
-    <div class="row">
-        <div class="leftside">
-            <h5>Queen's University:</h5>
-        </div>
-        <div class="rightside">
-<<<<<<< HEAD
-            <h5>APSC 100</h5>
-=======
-            <h3>First Year</h3>
->>>>>>> deb36695cc319d136e10d0f4de4d75d327a37252
-            <h5>APSC 200</h5>
-            <h5>Applied Thermodynamics</h5>
-        </div>    
-    </div>    
+
+    <div id="DIV">
+        <table id="Table">
+            <tr>
+                <td style="text-align:center; width:10%"><b>Queen's University</b></td>
+            </tr>
+            <tr>
+                <td style="text-align:center">APSC 100</td>
+                <td>Engineering practice</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">APSC 200</td>
+                <td>Designed indoor fish farm for northern communities, knee implant for youth gymansts</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">MECH 211</td>
+                <td>Manufacturing methods</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">MECH 270</td>
+                <td>Materials science</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">MECH 330</td>
+                <td>Use thermodynamic properties to design and improve refrigeration and power cycles.</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">MECH 310</td>
+                <td>Design mechatronic systems</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">MECH 302</td>
+                <td>Python, machine learning, data science</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
