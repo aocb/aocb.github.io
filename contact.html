@@ -19,23 +19,26 @@
             text-align: right;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Contact Page</h1>
     </div>
-    <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/education">Education</a>
-        <a href="/resume">Resume</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/contact" class="right">Contact</a> 
+</div>
+    <div id="nav-placeholder">
     </div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        }
+        );
+    </script>
     <div class="row">
         <div class="leftside">
             <a href="https://www.linkedin.com/in/aidanocbradley/">LinkedIn</a>
             <p></p>
-            <a href="mailto:a@aocb.ca">a@aocb.ca</a>
+            <a href="mailto:20aocb@queensu.ca">20aocb@queensu.ca</a>
         </div>
     </div>
 </body>

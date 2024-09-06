@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .leftSide {
-            flex: 30%;
+            flex: 20%;
             background-color: rgb(150, 150, 150);
             padding: 20px;
             text-align: left;
         }
 
         .rightSide {
-            flex: 70%;
+            flex: 80%;
             background-color: rgb(184, 184, 184);
             padding: 20px;
             text-align: right;
@@ -34,7 +34,7 @@
 
         .pic {
             float: left;
-            padding: 20px;
+            padding: 50px;
             flex: auto;
         }
         
@@ -42,36 +42,65 @@
             flex: auto;
             text-align: left;
         }
+
+        .center {
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
     </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Aidan Bradley</h1>
-        <h3>Mechanical Engineering Student; Open to Work!</h3>
+        <h3>Mechanical Engineering Student</h3>
     </div>
-    <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/education">Education</a>
-        <a href="/resume">Resume</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/contact" class="right">Contact</a> 
+
+    <div id="nav-placeholder"></div>
     </div>
-    <img class="pic" src="/assets/Aidan Bradley.jpg" height="300px">
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        }
+        );
+    </script>
+
+    <img class="pic" src="/assets/5.jpg" height="800px">
     <div class="about">
-        <h2>Hello!</h2>
-        <p>My name is Aidan Bradley and I am a mechanical engineering student in my third year at Queen's University.</p>
-        <p>I'm passionate about automotives and hope to help design cars for use by consumers and in motorsports.</p>
-        <p>Some of my other interests include:</p>
-        <ul class="a">
-            <li>Camping and hiking</li>
-            <li>3D printing</li>
-            <li>Classical history and philosophy</li>
-            <li>Simulation racing</li>
-            <li>Bread baking</li>
+        <h1>Hello World!</h1>
+        <p style="font-size: 24px;">
+            My name is Aidan Bradley and I'm a student in my final year of Mechanical and Materials Engineering at Queen's University.
+        </p>
+        <p style="font-size: 24px;">
+            I'm passionate about automotives and hope to help engineer solutions for passenger vehicles and racecars.
+            <br>
+            My goal is to make cars, and the processes used to make them, safer for all drivers, pedestrians, and our environment.
+        </p>
+
+        <p style="font-size: 24px;">
+            When working with a team, I believe the whole is greater than the sum of its parts. The oppportunity to work
+            with others and learn from them should be treasured.
+        </p>
+
+        <p style="font-size: 24px;">Some of my other interests include:</p>
+        <ul class="a" style="font-size: 24px;">
+            <li>Camping and Hiking</li>
+            <li>3D Printing</li>
+            <li>Classical History and Philosophy</li>
+            <li>Racing Simulators</li>
+            <li>Coding and Hobby Electronics</li>
+            <li>Bread Baking</li>
         </ul>
-        <p>...and recently web development! This website serves as my professional portfolio alongside my intro to HTML, CSS, and JavaScript. Please feel free to take a look at the <a href="https://github.com/aocb/aocb.github.io" target="_blank">project page on GitHub</a></p>
-        <p style="padding-left: 20px">If you are an employer looking for a motivated intern with an attention for detail, ready to learn and thrive in a fast-paced environment, you've come to the right place! Please find my work experience above and contact details <a href="/contact">here</a></p>
-    </div>        
+        <p style="font-size: 24px;">
+            ...and recently web development! This website serves as my professional portfolio as well as my own 
+            introduction to HTML, CSS, and JavaScript. Please feel free to take a look at the 
+            <a href="https://github.com/aocb/aocb.github.io" target="_blank">project page on GitHub.</a>
+            All code is written by hand.
+        </p>
+    <br>
+    <p style="font-size: 24px;">Please, look around and stay a while!</p>
+    </div>     
 </body>
 </html>
   

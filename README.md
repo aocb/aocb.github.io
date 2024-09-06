@@ -1,11 +1,9 @@
 # aocb.github.io
-Welcome to my mechanical engineering portfolio!
-I'm in my third year of studies at Queen's University. I have a passion for automotive engineering and motorsports.
+Welcome to my portfolio!
+I'm in my senior year of Mechanical and Materials Engineering at Queen's University in Kingston, Ontario.
 
-This project is my website to showcase my personal and professional projects. This is my first experience with GitHub, so please inform me on how to improve my code!
+This project is my website to showcase my personal and professional projects. This is my first experience with GitHub so things might get hairy...
 
-I am currently looking for a summer internship! Please contact me at:
-
-email: a@aocb.ca
+I am passionate about cars and motorsports. If you are looking for a highly motivated and skilled mechanical engineer with tire manufacturing experience, please feel free to contact me on LinkedIn.
 
 linkedin: https://www.linkedin.com/in/aidanocbradley/

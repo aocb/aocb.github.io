@@ -9,23 +9,38 @@
         .project {
             text-align: center;
             padding-left: 15px;
+            padding-bottom: 15px;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Portfolio</h1>
     </div>
-    <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/education">Education</a>
-        <a href="/resume">Resume</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/contact" class="right">Contact</a>        
+    <div id="nav-placeholder"></div>
     </div>
-    <div class="project" style="transform: translateX(-33%);">
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        }
+        );
+    </script>
+    <div class="project">
         <h1>Baja SAE Bucket Seat</h1>
         <a href="bajaseat.html"><img src="/assets/bajaseat_render.png" height="300" alt="Baja SAE Bucket Seat"></a>
+    </div>
+    <div class="project">
+        <h1>RC Car Two-Speed Gearbox</h1>
+        <img src="/assets/step3.jpg" height="300" alt="Gearbox">
+    </div>
+    <div class="project">
+        <h1>Aquaponic Facility for Northern Communities</h1>
+        <img src="/assets/aquaponic.jpg" height="300" alt="Aquaponic">
+    </div>
+    <div class="project">
+        <h1>Synthetic Bone Graft for Young Athletes</h1>
+        <img src="/assets/bone.png" height="300" alt="Bone Graft">
     </div>
 </body>
 </html>

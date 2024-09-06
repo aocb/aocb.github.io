@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            font-size: 22px;
+            flex: 1 1 150px;
+        }
+
+        ul {
+            text-align: left;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Experience</h1>
+    </div>
+    <div id="nav-placeholder"></div>
+    </div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        }
+        );
+    </script>
+    <div class="flex-container" style="justify-content: center;">
+        <h1>Goodyear Napanee - Manufacturing Technology Co-Op</h1>
+    </div>
+    <div class="flex-container">
+        <div></div>
+        <div style="flex-grow: 0;"><img src="/assets/goodyear.jpg" height="400"></div>
+        <div style="justify-content: center; padding: 15px;"><p>
+            My 16-month QUIP placement was at The Goodyear Tire & Rubber Company in Napanee, Ontario. 
+            <br><br>
+            Goodyear Napanee manufacturers
+            tires for passenger and light trucks, producing approximately 20,000 tires per day. 
+            <br><br>
+            There was a recent announcement
+            of an expansion at the plant of more than $575 million CAD.
+        </p></div>
+        <div style="justify-content: center; padding: 15px;"><p>
+            Part of the Quality Technology Team, my placement was as the Quality Specialist in the Curing Department.
+            My responsibilities included recording and tracking non-conforming product, interpret data
+            to resolve waste issues, explore solutions to reduce non-conformances, mitigate risks for
+            team members and customers, and reduce costs.
+            <br><br>
+            I acted as project manager for the testing and implementation of a quality verification machine. The machine is used
+            to verify the designs and text on the sidewall of the tire conform to DOT and legal requirements.
+        </p></div>
+        <div></div>
+    </div>
+    <br>
+    <br>
+    <div class="flex-container" style="flex-grow: 2; justify-content: center;">
+        <div>
+            <h2>Technical Skills</h2>    
+            <ul style="padding-left: 350px;">
+                <li>CAD
+                    <ul>
+                        <li>SOLIDWORKS</li>
+                        <li>AutoCAD</li>
+                        <li>CATIA</li>
+                    </ul>
+                </li>
+                <li>Data Analysis</li>
+                <li>Quality Systems and Tools
+                    <ul>
+                        <li>Six Sigma</li>
+                        <li>ISO 9001:2015</li>
+                    </ul>
+                </li>
+                <li>Programming
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>MATLAB</li>
+                        <li>HTML, CSS, JavaScript</li>
+                    </ul>
+                </li>
+                <li>Tire Manufacturing and Dynamics
+                    <ul>
+                        <li>Influence of tire uniformity on vehicle handling and response</li>
+                        <li>Understanding of construction techniques and their influence on uniformity</li>
+                        <li>Specialized in curing and molds</li>
+                        <li>Tire footprint mechanics</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Professional Skills</h2>
+            <ul style="padding-left: 350px;">
+                <li>Strong Communication</li>
+                <li>Attention to Detail</li>
+                <li>Work Independently</li>
+                <li>Problem Solving</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Positive Attitude</li>
+                <li>Eager to Learn</li>
+                <li>Build Tools</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div>
+            <h2>Strengths and Areas to Improve</h2>
+            <p>
+                My team can expect me to contribute high quality work and promote a positive working environment.
+                <br>
+                I am quick to learn and enjoy exploring new tools, methods, and ideas.
+                <br>
+                Organization of my work is sometimes unorthodox, however I am responsive to feedback and aim to
+                create a system benefiting all team members.
+                <br>
+                I enjoy designing and iterating based on tests.
+                <br>
+                I am a strong programmer and enjoy building tools to solve problems.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <button id="displayResumeButton" onclick="displayResume()">
+        Display Resume
+    </button>
+
+    <iframe style="display:none" id='resumesite' src="/assets/ResumeSite.pdf"  width="100%" height="750px"></iframe>
+    <script>
+        function displayResume() {
+            document.getElementById('resumesite').style.display = "inline";
+            document.getElementById('displayResumeButton').style.display = "none";
+        }
+    </script>
+</body>
+</html>
